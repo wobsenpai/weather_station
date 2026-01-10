@@ -4,7 +4,8 @@
     box-sizing: border-box;
   }
   
-  body{
+  body
+  {
     height: 100vh;
     width: 100vw;
     background-color: #111;
@@ -15,7 +16,8 @@
     color: white;
   }
   
-  #weather_title{
+  #weather_title
+  {
     font-family: 'Silkscreen';
     position: relative;
     top: 18%;
@@ -30,7 +32,8 @@
     color: white;
   }
   
-  .weather{
+  .weather
+  {
     font-family: "Poiret One";
     position: relative;
     text-align: center;
