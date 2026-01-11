@@ -16,26 +16,47 @@ body
   justify-content: center;
   align-items: center;
   color: white;
-  text-shadow: 
-              -1px -1px 0 black,
-               1px -1px 0 black,
-              -1px  1px 0 black,
-               1px  1px 0 black;
+
+/* Container for both weather boxes */
+.container 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
+/* Individual weather box */
+.current-weather 
+{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.details h6 
+{
+    margin-bottom: 10px;
+    font-family: 'Silkscreen';
+}
+  
 /* Background image */
 #weather
 {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  padding: 25px;
-  background-image: url("images/city.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 16px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  Overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 25px;
+    background-image: url("images/city.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    Overflow: hidden;
 }
 
 /* Background opacity */
@@ -75,15 +96,15 @@ body
   Opacity: 100%
 }
 
-/*Extra details*/
-.weather
-{ 
-  font-family: "Poiret One";
-  position: relative;
-  text-align: center;
-  justify-content: space-evenly;
-  letter-spacing: 2px;
-  line-height: 1.6; 
-  Opacity: 100%
+/*Images above body text*/
+.weather-icon 
+{
+    display: block;
+    margin: 0 auto 15px auto; /* center + space below */
+    width: 160px;
+    height: auto;
+    filter: drop-shadow(0 0 5px black);
 }
+  
+
 
