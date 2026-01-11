@@ -32,23 +32,51 @@
 
     <div id = 'weather_title'>
       <h4 class="title">Today's Weather</h4>
-
-      </div>
+    </div>
       
+    <form id="frm1" action="/action_page.php">
+        <label for="city">City:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="country">Country:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="button" onclick="SearchButtonPress()" value="Submit">
+      </form>
+
+      <script>
+        function SearchButtonPress() {
+          document.getElementById("frm1").submit();
+        }
+        </script>
+
     <div id = 'weather'>
 
     <div class="container">
-        <div class="current-weather">
+
+        <!-- Weather box 1 -->
+        <div class="weather1">
+            <img class="weather-icon" src="images/Open-Meteo.jpg" alt="Open Meteo">
             <div class="details">
-                <h6>Current Temp: __°C</h6>
-		        <h6>Humidity: __%</h6>
-		        <h6>Wind Speed: __Km/Hr</h6>
-                <h6>Wind Direction: __°</h6>
-		        <h6>Current Cloud Cover: __%</h6>
-                <h6>Current Percipitation: __ml</h6>
+                <h6>Current Temp: <span id = "temp1" >_</span>°C</h6>
+		        <h6>Humidity: <span id = "hum1">_</span>%</h6>
+		        <h6>Wind Speed: <span id = "windSpd1">_</span>Km/Hr</h6>
+                <h6>Wind Direction: <span id = "WindDir1">_</span>°</h6>
+                <h6>Current Percipitation: <span id = "prec1">_</span>mm</h6>
 
 	        </div>
         </div>
+
+         <!-- Weather box 2 -->
+         <div class="weather2">
+            <img class="weather-icon" src="images/Open-Weather.jpg" alt="Open Weather">
+            <div class="details">
+                <h6>Current Temp: <span id = "temp2">_</span>°C</h6>
+                <h6>Humidity: <span id = "hum2">_</span>%</h6>
+                <h6>Wind Speed: <span id = "windSpd2">_</span>/Hr</h6>
+                <h6>Wind Direction: <span id = "WindDir2">_</span>°</h6>
+                <h6>Current Percipitation: <span id = "prec2">_</span>mm</h6>
+            </div>
+        </div>
+
     </div>
 
     </div>
